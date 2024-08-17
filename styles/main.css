@@ -1,0 +1,58 @@
+header {
+  width: 1366px;
+  height: 196px;
+  background-image: url(../assets/images/background-pattern-desktop.svg);
+  position: fixed;
+  top: 0;
+}
+main {
+  z-index: 1;
+  width: 498px;
+  height: 460px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 5px 10px 80px rgba(0, 0, 0, 0.15),
+              -5px 10px 80px rgba(0, 0, 0, 0.15);
+  padding: 40px 36px;
+  padding-bottom: 30px;
+}
+
+main div {
+  display: flex;
+  align-items: center;
+}
+#faqs {
+  font-size: 3.375rem;
+  font-weight: bold;
+  margin-left: 24px;
+}
+.div2 {
+  justify-content: space-between;
+  margin-top: 36px;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  margin-bottom: 20px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.div2:hover {
+  color: rgb(173,40,235);
+}
+main p {
+  color: gray;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (max-width: 560px) {
+  header {
+    background-image: url(../assets/images/background-pattern-mobile.svg);
+  }
+  main {
+    width: 300px;
+    height: auto;
+  }
+  main div span {
+    width: 250px;
+  }
+}
